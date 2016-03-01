@@ -1,6 +1,7 @@
 <?php
 /**
  * XML-RPC protocol support for WordPress
+ * 远程发布功能. how?
  *
  * @package WordPress
  */

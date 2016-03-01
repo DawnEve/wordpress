@@ -4,14 +4,18 @@
  * and loading the wp-config.php file. The wp-config.php
  * file will then load the wp-settings.php file, which
  * will then set up the WordPress environment.
+ * bootstrap文件设置了ABSPATH常量，加载了wp-config.php文件。
+ * wp-config.php加载wp-settings.php文件，后者建立wp的环境。
  *
  * If the wp-config.php file is not found then an error
  * will be displayed asking the visitor to set up the
  * wp-config.php file.
+ * 如果wp-config.php文件没有找到，就会展现一个错误，提示访问者建立wp-config.php文件。
  *
  * Will also search for wp-config.php in WordPress' parent
  * directory to allow the WordPress directory to remain
  * untouched.
+ * 也将会在wp父目录搜索wp-config.php文件，以便使wp目录不被接触。
  *
  * @internal This file must be parsable by PHP4.
  *

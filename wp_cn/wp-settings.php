@@ -2,8 +2,10 @@
 /**
  * Used to set up and fix common variables and include
  * the WordPress procedural and class library.
+ * 建立和修复常用变量，引入wp过程和类库。
  *
  * Allows for some configuration in wp-config.php (see default-constants.php)
+ * 允许一些wp-config.php中的设置(看default-constants.php文件)
  *
  * @internal This file must be parsable by PHP4.
  *
@@ -12,7 +14,7 @@
 
 /**
  * Stores the location of the WordPress directory of functions, classes, and core content.
- *
+ * 保存函数、类、核心常量的wp目录位置。
  * @since 1.0.0
  */
 define( 'WPINC', 'wp-includes' );
@@ -410,4 +412,4 @@ if ( is_multisite() ) {
  *
  * @since 3.0.0
  */
-do_action( 'wp_loaded' );
+do_action( 'wp_loaded' ); //钩子

@@ -1,6 +1,7 @@
 <?php
 /**
  * Handle Trackbacks and Pingbacks Sent to WordPress
+ * 别人转载的通知。how?
  *
  * @since 0.71
  *

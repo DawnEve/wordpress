@@ -8,3 +8,8 @@
 	
 用户名: admin
 密码: *4ThePeaple*
+
+视频地址：F:\BaiduYunDownload\黄聪：Wordpress主题模版开发教程（QQ2555515）
+
+主题地址：F:\xampp\htdocs\wordpress\wp_cn\wp-content\themes\dawn
+

@@ -1,6 +1,7 @@
 <?php
 /**
  * Handles Comment Post to WordPress and prevents duplicate comment posting.
+ *	处理用户评论，防止重复提交评论。
  *
  * @package WordPress
  */
