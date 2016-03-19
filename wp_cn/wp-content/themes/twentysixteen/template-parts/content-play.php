@@ -37,9 +37,9 @@
 	</video>
 </div>
 	
-	<div id=showHintOfChrome></div>
+	<div id='showHintOfChrome'></div>
 
-	<br />
+
 	<a id='list' href="index.php" target="_blank">返回列表</a> | 
 	<a id='store' href="javascript:void(0);">收藏</a> | 
 	<a id='download' href="<?php echo $v_url;?>" target="_">下载</a> | 

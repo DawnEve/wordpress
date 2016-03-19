@@ -19,8 +19,8 @@
 
 	<footer class="entry-footer">
 		<?php twentysixteen_entry_meta(); ?>
-		<?php
 
+		<?php
 			//编辑
 			edit_post_link(
 				sprintf(
