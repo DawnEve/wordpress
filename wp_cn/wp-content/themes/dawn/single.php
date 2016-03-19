@@ -28,13 +28,24 @@
 			<!-- Post Content -->
 			<?php the_content(); ?>
 
-			<!-- Post Links -->			
-			<p class="clearfix"> <a href="<?php echo get_option('home'); ?>" class="button float" >&lt;&lt; 返回首页</a> <a href="#commentform" class="button float right" >发表评论</a> </p>
+			<!-- Post Links -->	
+			
+			<p class="clearfix">
+				<?php 
+					//posts_nav_link('in between','befor','after'); 
+					posts_nav_link(); 
+				?>
+			
+				<a href="<?php echo get_option('home'); ?>" class="button float" >&lt;&lt; 返回首页</a>
+				<a href="#commentform" class="button float right" >发表评论</a> 
+			</p>
 
 			
 			
 		</div>
 		<div class="hr clearfix">&nbsp;</div>
+		
+		
 		<?php comments_template(); ?>
 
 	</div>

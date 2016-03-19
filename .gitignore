@@ -20,3 +20,14 @@ dustbin
 .buildpath
 .project
 .externalToolBuilders
+
+
+# ignore wp_cn  
+one-page
+solar
+uploader
+
+
+flowplayer5 
+uploads
+

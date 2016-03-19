@@ -1,5 +1,9 @@
- <!-- Column 2 / Sidebar -->
-    <div class="grid_4">
+<!-- Column 2 / Sidebar -->
+<div class="grid_4">
+
+	<ul><li id="searchform">
+		<?php include(TEMPLATEPATH . '/searchform.php'); ?>
+	</li></ul>
         
     <?php if ( !function_exists('dynamic_sidebar') 
                         || !dynamic_sidebar('First_sidebar') ) : ?>
@@ -9,6 +13,15 @@
         </ul>
     <?php endif; ?>
         
+		
+		
+		
+		<ul>
+			<?php wp_list_pages('title_li=<h4>页面目录</h4>'); ?>
+		</ul>
+		
+		
+		
     <?php if ( !function_exists('dynamic_sidebar') 
                             || !dynamic_sidebar('Second_sidebar') ) : ?>        
         <h4>最新文章</h4>
@@ -24,21 +37,42 @@
         </ul>
     <?php endif; ?>
     
+	
+	
+	
     <?php if ( !function_exists('dynamic_sidebar') 
                             || !dynamic_sidebar('Third_sidebar') ) : ?> 
         <h4>标签云</h4>
         <p><?php wp_tag_cloud('smallest=8&largest=22'); ?></p>
     <?php endif; ?>
         
+		
+		
+		
+		
     <?php if ( !function_exists('dynamic_sidebar') 
                         || !dynamic_sidebar('Fourth_sidebar') ) : ?>                    
         <h4>文章存档</h4>
         <ul>
-            <?php wp_get_archives('limit=10'); ?>
+            <?php 
+				//wp_get_archives('limit=10'); 
+				wp_get_archives('type=monthly'); 
+			?>
         </ul>
     <?php endif; ?>
     
-    </div>
+	
+	<h4>友情链接</h4>
+	<?php get_links_list();//?为什么没有显示呢？ ?>
+	<ul>
+		<li><a target='_blank' href='http://blog.dawneve.cc'>dawn's blog</a></li>
+		<li><a target='_blank' href='#'>xx</a></li>
+	</ul>
+	
+	
+	
+	
+</div>
     <div class="hr grid_12 clearfix">&nbsp;</div>
 	
 <!-- Column 2 / Sidebar 

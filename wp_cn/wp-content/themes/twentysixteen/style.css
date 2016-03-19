@@ -450,10 +450,12 @@ html {
 	box-sizing: inherit;
 }
 
+	/*
+	 Fallback for when there is no custom background color defined. 
 body {
 	background: #1a1a1a;
-	/* Fallback for when there is no custom background color defined. */
 }
+	 */
 
 hr {
 	background-color: #d1d1d1;
@@ -762,6 +764,7 @@ a:active {
 }
 
 
+
 /**
  * 6.2 - Menus
  */
@@ -920,6 +923,8 @@ a:active {
 .social-navigation a:focus:before {
 	color: #007acc;
 }
+
+
 
 .social-navigation a[href*="codepen.io"]:before {
 	content: "\f216";
@@ -1250,6 +1255,14 @@ a:active {
 	opacity: 0.7;
 	padding: 0 0.538461538em;
 }
+
+/*
+文章末尾导航
+.nav-links{background:red;    overflow: hidden;}
+.nav-previous{background:blue; float:left;}
+.nav-next{background:orange; float:right;}
+*/
+.nav-next{text-align:right;}
 
 
 /**
@@ -1952,12 +1965,13 @@ body:not(.search-results) .entry-summary > :last-child,
 }
 
 .entry-footer a {
-	color: #686868;
+	/*color: #686868;*/
+	color:#bc360a
 }
 
 .entry-footer a:hover,
 .entry-footer a:focus {
-	color: #007acc;
+	color: #ea9629; /*#007acc;*/
 }
 
 .entry-footer > span:not(:last-child):after {
@@ -2078,6 +2092,10 @@ body.search-no-results .page-header {
 	padding-right: 0.6153846154em;
 	width: auto;
 }
+
+
+
+
 
 .entry-attachment {
 	margin-bottom: 1.75em;
@@ -3374,6 +3392,7 @@ p > video {
 
 	.site-main > article {
 		margin-bottom: 7.0em;
+		border:1px solid #eee;padding:10px;
 	}
 
 	.entry-title {
@@ -3381,6 +3400,8 @@ p > video {
 		font-size: 2.5rem;
 		line-height: 1.225;
 		margin-bottom: 1.05em;
+		
+		font-family: '微软雅黑';
 	}
 
 	.format-aside .entry-title,
@@ -3481,8 +3502,11 @@ p > video {
 	}
 
 	body:not(.search-results) article:not(.type-page) .entry-content {
-		float: right;
+		/*float: right;
 		width: 71.42857144%;
+		
+		    background: #eee;*/
+			overflow:hidden;padding:5px;
 	}
 
 	body:not(.search-results) article:not(.type-page) .entry-content > blockquote.alignleft.below-entry-meta {
@@ -3509,9 +3533,10 @@ p > video {
 	}
 
 	body:not(.search-results) article:not(.type-page) .entry-footer {
-		float: left;
+		/*float: left;
+		width: 21.42857143%;*/
 		margin-top: 0.1538461538em;
-		width: 21.42857143%;
+		
 	}
 
 	body:not(.search-results) article:not(.type-page) .entry-footer > span:not(:last-child):after {
@@ -3527,7 +3552,8 @@ p > video {
 	body:not(.search-results) article:not(.sticky) .posted-on,
 	body:not(.search-results) article:not(.type-page) .comments-link,
 	body:not(.search-results) article:not(.type-page) .entry-footer .edit-link {
-		display: block;
+		/*display: block;*/
+		margin:0 10px;
 		margin-bottom: 0.5384615385em;
 	}
 
