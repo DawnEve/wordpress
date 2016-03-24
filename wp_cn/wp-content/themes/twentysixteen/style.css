@@ -817,6 +817,22 @@ a:active {
 
 
 
+/*by wjl*/
+
+
+.navigation .nav-previous {
+	float: left;
+}
+
+.navigation .nav-next {
+	float: right;
+}
+
+
+
+
+
+
 /**
  * 6.2 - Menus
  */
@@ -1088,21 +1104,21 @@ a:active {
 }
 
 .post-navigation {
-	border-top: 4px solid #1a1a1a;
-	border-bottom: 4px solid #1a1a1a;
+	/*border-top: 4px solid #1a1a1a;
+	border-bottom: 4px solid #1a1a1a;*/
 	clear: both;
 	font-family: Montserrat, "Helvetica Neue", sans-serif;
 	margin: 0 7.6923% 3.5em;
 }
 
 .post-navigation a {
-	color: #1a1a1a;
+	color:#bc360a;   /*#1a1a1a;*/
 	display: block;
-	padding: 1.75em 0;
+	/*padding: 1.75em 0;*/
 }
 
 .post-navigation span {
-	display: block;
+	/* display: block; */
 }
 
 .post-navigation .meta-nav {
@@ -1127,11 +1143,11 @@ a:active {
 
 .post-navigation a:hover .post-title,
 .post-navigation a:focus .post-title {
-	color: #007acc;
+	color:#ea9629; /*#007acc;*/
 }
 
 .post-navigation div + div {
-	border-top: 4px solid #1a1a1a;
+	/*border-top: 4px solid #1a1a1a;*/
 }
 
 .pagination {
@@ -1575,7 +1591,7 @@ blockquote:after,
 
 .site-inner {
 	margin: 0 auto;
-	max-width: 1320px;
+	/*max-width: 1320px;*/
 	position: relative;
 }
 
@@ -1603,6 +1619,12 @@ blockquote:after,
 
 .site-header {
 	padding: 2.625em 7.6923%;
+
+	    border-bottom: 20px solid #0096FF;
+	    margin-bottom: 10px;
+	    padding-top: 10px;
+	    padding-bottom: 10px;
+	    background-color: rgba(207,235,254,0.2);
 }
 
 .site-header-main {
@@ -2435,6 +2457,7 @@ body.search-no-results .page-header {
 
 .site-footer {
 	padding: 0 7.6923% 1.75em;
+	background-color: #e8e5ce;
 }
 
 .site-info {
@@ -2442,6 +2465,10 @@ body.search-no-results .page-header {
 	font-size: 13px;
 	font-size: 0.8125rem;
 	line-height: 1.6153846154;
+
+    width: 100%;
+    max-width: 1024px;
+    padding: 30px 0;
 }
 
 .site-info a {
@@ -2785,7 +2812,7 @@ p > video {
 	}
 
 	.site {
-		margin: 21px;
+		/*margin-top: 21px;*/
 	}
 
 	.site-main {
@@ -2794,6 +2821,12 @@ p > video {
 
 	.site-header {
 		padding: 3.9375em 7.6923%;
+
+		    border-bottom: 20px solid #0096FF;
+		    margin-bottom: 10px;
+		    padding-top: 10px;
+		    padding-bottom: 10px;
+		    background-color: rgba(207,235,254,0.2);
 	}
 
 	.site-branding {
@@ -2839,8 +2872,8 @@ p > video {
 	}
 
 	.post-navigation .post-title {
-		font-size: 28px;
-		font-size: 1.75rem;
+		font-size: 20px;
+		font-size: 1.0rem;
 		line-height: 1.25;
 	}
 
@@ -2988,6 +3021,13 @@ p > video {
 	.site-header {
 		padding-right: 4.5455%;
 		padding-left: 4.5455%;
+
+		    border-bottom: 20px solid #0096FF;
+		    margin-bottom: 10px;
+		    padding-top: 10px;
+		    padding-bottom: 10px;
+		    background-color: rgba(207,235,254,0.2);
+
 	}
 
 	.site-header-main {
@@ -3005,6 +3045,9 @@ p > video {
 
 	.main-navigation {
 		margin: 0 -0.875em;
+
+		border-radius: 10px;
+    	box-shadow: 5px 5px 20px 4px;
 	}
 
 	.main-navigation .primary-menu,
@@ -3361,7 +3404,7 @@ p > video {
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		padding: 0 4.5455% 3.5em;
+		/*padding: 0 4.5455% 3.5em;*/
 	}
 
 	.site-footer .social-navigation {
@@ -3417,6 +3460,10 @@ p > video {
 
 	.site-header {
 		padding: 5.25em 4.5455%;
+		    border-bottom: 20px solid #0096FF;
+		    margin-bottom: 10px;
+		    padding-top: 10px;padding-bottom: 10px;	
+		    background-color: rgba(207,235,254,0.2);
 	}
 
 	.site-branding,

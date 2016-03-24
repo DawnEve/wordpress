@@ -74,7 +74,7 @@ function twentysixteen_entry_date() {
 
 	$time_string = sprintf( $time_string,
 		esc_attr( get_the_date( 'c' ) ),
-		get_the_date('Y/m/d H:m:s'),
+		get_the_date('Y/m/d H:m'),
 		esc_attr( get_the_modified_date( 'c' ) ),
 		get_the_modified_date()
 	);
