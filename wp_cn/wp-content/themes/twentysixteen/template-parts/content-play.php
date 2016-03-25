@@ -1,19 +1,31 @@
 <?php 
-	//1.获取视频目录和文件名
-	$p_url = get_post_meta($post->ID,'picture_link',true);
-	if($p_url==null){
-		$p_url='film.dawneve.cc/media/flowPlayer.jpg';
-	}
-	//$v_url = get_post_meta($post->ID,'video_link',true);
-	$v_name = get_post_meta($post->ID,'name',true);
-
+	//flowplayer插件
+	$flowplayer_path= get_template_directory_uri() . '/html5media';
+	$media_path=get_bloginfo('url') . '/media/';
 	
+	//1.获取视频目录和文件名
+
+	$p_url = get_post_meta($post->ID,'picture_link',true);//图片链接
+	if($p_url==null){
+		$p_url= $flowplayer_path .'/flowplayer/default.jpg';
+	}
+
+	//$v_url = get_post_meta($post->ID,'video_link',true);//视频链接，content-single.php已经获取过v_url了
+	$v_name = get_post_meta($post->ID,'name',true);//视频的名字
+	if($v_name==null) $v_name= $v_url;
+
+
+	$p_url=$media_path . $p_url;//转化为绝对地址
+	$v_url=$media_path . $v_url;//转化为绝对地址
+
+
+
 	//2.显示视频
 ?>
   <!-- for players  begin-->
-  <link rel="stylesheet" href="/html5media/flowplayer/skin/minimalist.css">
-  <script src="/html5media/jquery-1.11.2.min.js"></script>
-  <script src="/html5media/flowplayer/flowplayer.min.js"></script>
+  <link rel="stylesheet" href="<?=$flowplayer_path;?>/flowplayer/skin/minimalist.css">
+  <script src="<?=$flowplayer_path;?>/jquery-1.11.2.min.js"></script>
+  <script src="<?=$flowplayer_path;?>/flowplayer/flowplayer.min.js"></script>
   <!-- for players  end-->
    <style>
   /*视频样式*/
@@ -25,7 +37,7 @@
 
 <div class="wrap main">
 
-	<h1><?php echo $v_name;?>  [<a id='shrink' class=btn href='javascript:void(0);'>缩小</a>|<a id='enlarge' class=btn href='javascript:void(0);'>放大</a>]</h1>
+	<h1>[<a id='shrink' class=btn href='javascript:void(0);'>缩小</a>|<a id='enlarge' class=btn href='javascript:void(0);'>放大</a>] <?php echo $v_name;?></h1>
 
 
 	
@@ -40,7 +52,7 @@
 	<div id='showHintOfChrome'></div>
 
 
-	<a id='list' href="index.php" target="_blank">返回列表</a> | 
+	<a id='list' href="index.php" target="_blank">返回首页</a> | 
 	<a id='store' href="javascript:void(0);">收藏</a> | 
 	<a id='download' href="<?php echo $v_url;?>" target="_">下载</a> | 
 	

@@ -50,7 +50,12 @@
 				<span class="site-title">版权所有 &copy;2016 <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
 				<span class="site-title"><a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentysixteen' ) ); ?>"><?php printf( __( '由%s构建', 'twentysixteen' ), 'WordPress' ); ?></a></span>
 
-				 主题修改自 <a href="https://wordpress.org/themes/twentysixteen/" rel="home">twentysixteen</a></span>
+				<span class="site-title">主题修改自 <a href="https://wordpress.org/themes/twentysixteen/" rel="home">twentysixteen</a></span>
+
+				<span class="site-title">视频播放器采用<a href="https://flowplayer.org/">flowplayer</a></span>
+				<span class="site-title"><a href="http://miostudio.blog.163.com/">米欧互联</a>提供技术支持</span>
+
+				 
 			</div><!-- .site-info -->
 		</footer><!-- .site-footer -->
 	</div><!-- .site-inner -->

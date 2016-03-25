@@ -1,21 +1,26 @@
 <?php
 /**
  * Loads the correct template based on the visitor's url
+ * 根据访问者的url加载相应的模板。
  * @package WordPress
  */
 if ( defined('WP_USE_THEMES') && WP_USE_THEMES )
 	/**
 	 * Fires before determining which template to load.
+	 * 在决定加载哪个模板之前触发钩子'template_redirect'
 	 *
 	 * @since 1.5.0
 	 */
 	do_action( 'template_redirect' );
 
+
 /**
  * Filter whether to allow 'HEAD' requests to generate content.
+ * 过滤HEAD，防止生成内容。
  *
  * Provides a significant performance bump by exiting before the page
  * content loads for 'HEAD' requests. See #14348.
+ * 
  *
  * @since 3.5.0
  *
@@ -24,26 +29,27 @@ if ( defined('WP_USE_THEMES') && WP_USE_THEMES )
 if ( 'HEAD' === $_SERVER['REQUEST_METHOD'] && apply_filters( 'exit_on_http_head', true ) )
 	exit();
 
-// Process feeds and trackbacks even if not using themes.
+// Process feeds and trackbacks even if not using themes. 如果是机器人，不加载模板也能提供feeds和trackbacks
 if ( is_robots() ) :
 	/**
 	 * Fired when the template loader determines a robots.txt request.
+	 * 如果是机器人
 	 *
 	 * @since 2.1.0
 	 */
 	do_action( 'do_robots' );
 	return;
-elseif ( is_feed() ) :
+elseif ( is_feed() ) :  //如果是feed 
 	do_feed();
 	return;
-elseif ( is_trackback() ) :
+elseif ( is_trackback() ) : //如果是引用
 	include( ABSPATH . 'wp-trackback.php' );
 	return;
-elseif ( is_embed() ) :
+elseif ( is_embed() ) : //如果是植入
 	$template = ABSPATH . WPINC . '/embed-template.php';
 
 	/**
-	 * Filter the template used for embedded posts.
+	 * Filter the template used for embedded posts.过滤用于植入的文章
 	 *
 	 * @since 4.4.0
 	 *
@@ -55,6 +61,8 @@ elseif ( is_embed() ) :
 	return;
 endif;
 
+
+//根据url加载不同的模板。
 if ( defined('WP_USE_THEMES') && WP_USE_THEMES ) :
 	$template = false;
 	if     ( is_404()            && $template = get_404_template()            ) :
@@ -76,7 +84,7 @@ if ( defined('WP_USE_THEMES') && WP_USE_THEMES ) :
 	elseif ( is_comments_popup() && $template = get_comments_popup_template() ) :
 	elseif ( is_paged()          && $template = get_paged_template()          ) :
 	else :
-		$template = get_index_template();
+		$template = get_index_template(); 
 	endif;
 	/**
 	 * Filter the path of the current template before including it.

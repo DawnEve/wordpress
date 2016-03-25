@@ -1624,7 +1624,7 @@ blockquote:after,
 	    margin-bottom: 10px;
 	    padding-top: 10px;
 	    padding-bottom: 10px;
-	    background-color: rgba(207,235,254,0.2);
+	    background-color: #E8E5CE;
 }
 
 .site-header-main {
@@ -2826,7 +2826,7 @@ p > video {
 		    margin-bottom: 10px;
 		    padding-top: 10px;
 		    padding-bottom: 10px;
-		    background-color: rgba(207,235,254,0.2);
+		    background-color: #E8E5CE;
 	}
 
 	.site-branding {
@@ -3026,7 +3026,7 @@ p > video {
 		    margin-bottom: 10px;
 		    padding-top: 10px;
 		    padding-bottom: 10px;
-		    background-color: rgba(207,235,254,0.2);
+		    background-color: #E8E5CE;
 
 	}
 
@@ -3463,7 +3463,7 @@ p > video {
 		    border-bottom: 20px solid #0096FF;
 		    margin-bottom: 10px;
 		    padding-top: 10px;padding-bottom: 10px;	
-		    background-color: rgba(207,235,254,0.2);
+		    background-color: #E8E5CE;
 	}
 
 	.site-branding,
