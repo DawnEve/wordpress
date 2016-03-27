@@ -20,6 +20,9 @@
 	<footer class="entry-footer">
 		<?php twentysixteen_entry_meta(); ?>
 
+		
+		<?php if(function_exists('the_views')) { the_views(); } //访问次数 ?>
+
 		<?php
 			//编辑
 			edit_post_link(

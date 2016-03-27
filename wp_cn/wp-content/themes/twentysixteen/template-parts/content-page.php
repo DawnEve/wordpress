@@ -16,6 +16,7 @@
 	<?php twentysixteen_post_thumbnail(); ?>
 
 	<div class="entry-content">
+
 		<?php
 		the_content();
 
@@ -29,6 +30,11 @@
 		) );
 		?>
 	</div><!-- .entry-content -->
+
+
+	<div class=views style="color:#ccc;">
+		<?php if(function_exists('the_views')) { the_views(); } //访问次数 ?>
+	</div>
 
 	<?php
 		edit_post_link(

@@ -1,36 +1,41 @@
 
-������http://www.biomooc.com/
+域名：http://www.biomooc.com/
 
-�ֱ�����������
+分别设置子域名
 	http://wpcn.dawneve.cc/	F:\xampp\htdocs\wordpress\wp_cn
 	http://wpen.dawneve.cc/	F:\xampp\htdocs\wordpress\wp_en
 	
 	
 
 
-��Ƶ��ַ��F:\BaiduYunDownload\�ƴϣ�Wordpress����ģ�濪���̳̣�QQ2555515��
+视频地址：F:\BaiduYunDownload\黄聪：Wordpress主题模版开发教程（QQ2555515）
 
-�����ַ��F:\xampp\htdocs\wordpress\wp_cn\wp-content\themes\dawn
+主题地址：F:\xampp\htdocs\wordpress\wp_cn\wp-content\themes\dawn
 
-���page�޸ĺ�http://wpcn.dawneve.cc/about/��gitû�����ļ��仯��˵��page�е����ж����������ݿ��С�
+这个page修改后http://wpcn.dawneve.cc/about/，git没发现文件变化，说明page中的所有东西都在数据库中。
 
 ========================================
-v0.1 ���úܶ��������Ͳ�����������룬�������Ҫ�Լ�������
+v0.1 试用很多国外主题和插件，都不理想，最后还是需要自己处理。
 
 v0.2 
-��������2016���⡣
-�Ѿ�����flowplayer��������
+决定给予2016主题。
+已经加了flowplayer播放器。
 
 v0.3 
-�����µ����ߡ�ʱ�䡢���ࡢ��ǩСͼ��㶨��
+标题下的作者、时间、分类、标签小图标搞定。
 
 v0.4
-����flowplayer������Ŀ¼���ƶ�������2016�ڲ���
+调整flowplayer播放器目录，移动到主题2016内部。
+
+v0.5
+添加了访问计数功能，使用插件 PostViews。
+需要修改文件post和page的单页，添加访问统计功能。
 
 
-���ڵ�����
-	��ǩ��
-	���ߡ����ࡢ��ǩ�����ڡ�
+
+正在调整：
+	标签云
+	作者、分类、标签、日期。
 	
 
 

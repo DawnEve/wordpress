@@ -550,6 +550,7 @@ dd {
 
 img {
 	height: auto;
+	 		width: 100%;
 	/* Make sure images are scaled correctly. */
 	max-width: 100%;
 	/* Adhere to container width. */
@@ -3048,6 +3049,7 @@ p > video {
 
 		border-radius: 10px;
     	box-shadow: 5px 5px 20px 4px;
+    	background: #fff;
 	}
 
 	.main-navigation .primary-menu,
@@ -3167,6 +3169,7 @@ p > video {
 
 	.site-content {
 		padding: 0 4.5455%;
+		background: #fafafa;
 	}
 
 	.content-area {
@@ -3492,6 +3495,8 @@ p > video {
 	.site-main > article {
 		margin-bottom: 7.0em;
 		border:1px solid #eee;padding:10px;
+		background: #fff;
+		box-shadow: 1px 1px 10px;/*box-shadow: 5px 5px 20px 1px;*/
 	}
 
 	.entry-title {
