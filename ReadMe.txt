@@ -31,6 +31,12 @@ v0.5
 添加了访问计数功能，使用插件 PostViews。
 需要修改文件post和page的单页，添加访问统计功能。
 
+http://www.wpdaxue.com/wp-postviews.html
+
+v0.6
+准备移植到另一台电脑。
+
+
 
 
 正在调整：
